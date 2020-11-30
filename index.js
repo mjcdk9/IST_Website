@@ -1,28 +1,15 @@
 
-function illOn() {
-	let ArtGalStyle = document.getElementById("ArtGal").style;
-	ArtGalStyle.animation = "ilKey 1s";
-	ArtGalStyle.backgroundImage ="url('Art/monkey4.jpg')"
+var slideIndex = 0;
+showSlides();
 
-}
-
-function anOn() {
-	let ArtGalStyle = document.getElementById("ArtGal").style;
-	ArtGalStyle.animation = "anKey 1s";
-	ArtGalStyle.backgroundImage ="url('Art/monkey3.jpg')";
-	ArtGalStyle.color = "black";
-
-}
-
-function gdOn(){
-	let ArtGalStyle = document.getElementById("ArtGal").style;
-	ArtGalStyle.animation = "gdKey 1s";
-	ArtGalStyle.backgroundImage ="url('Art/monkey2.jpg')"
-}
-
-function Off(lastPic){
-	let ArtGalStyle = document.getElementById("ArtGal").style;
-	ArtGalStyle.animation = "offKey 1s";
-	document.getElementById("ArtGal").style.backgroundImage = "url('Art/monkey1.jpg')";
-	ArtGalStyle.color = "white";
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 7000); // Change image every 2 seconds
 }
