@@ -1,0 +1,53 @@
+body{
+	background-image: url("Art/background.jpg");
+}
+
+#Header {
+	color: white;
+}
+
+
+.head > div{
+	color: white;
+}
+
+#NavBar > ul {
+	  list-style-type: none;
+	  overflow: hidden;
+	  background-color: #91abd0 ;
+		padding: 0px;
+		margin:0px;
+	}
+#NavBar  ul  li {
+	float: left;
+	font-size: 1.5em;
+	padding: 20px;
+}
+
+#NavBar > ul > li:hover {
+	text-decoration:underline;
+	background-color: #001a33;
+}
+
+img {
+    object-position: left;
+    max-width: 400px;
+}
+
+p {
+    font-weight: 
+}
+
+dt {
+    font-size: 20px;
+}
+
+dd {
+    font-size: 15px;
+    display: list-item;
+}
+
+dl {
+    
+    background-color: black;
+}
